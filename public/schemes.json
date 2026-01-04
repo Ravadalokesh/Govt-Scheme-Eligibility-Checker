@@ -1,0 +1,215 @@
+[
+  {
+    "id": 1,
+    "name": "Pradhan Mantri Awas Yojana (PMAY)",
+    "description": "Housing scheme for affordable housing to the urban poor and rural areas.",
+    "criteria": {
+      "income": { "max": 180000 },
+      "age": { "min": 18 },
+      "location": ["rural", "urban"]
+    },
+    "benefits": [
+      "Subsidy up to ₹2.67 lakh for home loans",
+      "Interest subsidy of 6.5%",
+      "Affordable housing in urban and rural areas"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "description": "Direct income support scheme for farmers.",
+    "criteria": {
+      "farmer": true,
+      "age": { "min": 18 }
+    },
+    "benefits": [
+      "₹6,000 per year in three equal installments",
+      "Direct transfer to bank account",
+      "No middlemen involved"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Pradhan Mantri Ujjwala Yojana",
+    "description": "Free LPG connections to women from below poverty line families.",
+    "criteria": {
+      "gender": "female",
+      "income": { "max": 100000 },
+      "age": { "min": 18 }
+    },
+    "benefits": [
+      "Free LPG connection",
+      "Financial support for first refill",
+      "Health benefits from clean cooking"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana",
+    "description": "Health insurance scheme for economically vulnerable families.",
+    "criteria": {
+      "income": { "max": 500000 },
+      "category": ["sc", "st", "obc"]
+    },
+    "benefits": [
+      "Health coverage up to ₹5 lakh per family",
+      "Cashless treatment at empaneled hospitals",
+      "Covers secondary and tertiary care"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+    "description": "Maternity benefit program for pregnant and lactating mothers.",
+    "criteria": {
+      "gender": "female",
+      "age": { "min": 19, "max": 45 }
+    },
+    "benefits": [
+      "₹5,000 in three installments",
+      "First child benefit",
+      "Direct bank transfer"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Pradhan Mantri Shram Yogi Maan-Dhan (PMSYM)",
+    "description": "Pension scheme for unorganized workers.",
+    "criteria": {
+      "income": { "max": 15000 },
+      "age": { "min": 18, "max": 40 },
+      "unemployed": false
+    },
+    "benefits": [
+      "Monthly pension of ₹3,000 after 60 years",
+      "Contribution-based scheme",
+      "Government matching contribution"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Pradhan Mantri Mudra Yojana",
+    "description": "Micro finance scheme for small businesses.",
+    "criteria": {
+      "age": { "min": 18 },
+      "income": { "max": 1000000 }
+    },
+    "benefits": [
+      "Loans up to ₹10 lakh",
+      "No collateral required",
+      "Low interest rates"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Pradhan Mantri Jan Dhan Yojana (PMJDY)",
+    "description": "Financial inclusion program for bank accounts.",
+    "criteria": {
+      "age": { "min": 10 }
+    },
+    "benefits": [
+      "Zero balance bank account",
+      "RuPay debit card",
+      "Accident insurance of ₹2 lakh"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Pradhan Mantri Kisan Maan Dhan Yojana",
+    "description": "Pension scheme for small and marginal farmers.",
+    "criteria": {
+      "farmer": true,
+      "age": { "min": 18, "max": 40 },
+      "income": { "max": 200000 }
+    },
+    "benefits": [
+      "Monthly pension of ₹3,000 after 60 years",
+      "Government contribution",
+      "Family pension option"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Stand Up India Scheme",
+    "description": "Bank loan scheme for SC/ST and women entrepreneurs.",
+    "criteria": {
+      "category": ["sc", "st"],
+      "gender": "female",
+      "age": { "min": 18 }
+    },
+    "benefits": [
+      "Bank loans from ₹10 lakh to ₹1 crore",
+      "Greenfield projects",
+      "Composite loan for working capital"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Pradhan Mantri Vaya Vandana Yojana",
+    "description": "Pension scheme for senior citizens.",
+    "criteria": {
+      "age": { "min": 60 }
+    },
+    "benefits": [
+      "Guaranteed pension for 10 years",
+      "Interest rate of 7.4% per annum",
+      "Monthly/quarterly/half-yearly/yearly pension"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Pradhan Mantri Gramin Awaas Yojana",
+    "description": "Housing scheme for rural areas.",
+    "criteria": {
+      "location": "rural",
+      "income": { "max": 300000 },
+      "category": ["sc", "st", "obc"]
+    },
+    "benefits": [
+      "Financial assistance up to ₹1.20 lakh",
+      "Toilet construction support",
+      "Convergence with other schemes"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+    "description": "Accident insurance scheme.",
+    "criteria": {
+      "age": { "min": 18, "max": 70 }
+    },
+    "benefits": [
+      "Accident death coverage of ₹2 lakh",
+      "Premium of just ₹12 per year",
+      "Permanent disability coverage"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "description": "Life insurance scheme.",
+    "criteria": {
+      "age": { "min": 18, "max": 50 }
+    },
+    "benefits": [
+      "Life insurance of ₹2 lakh",
+      "Premium of ₹436 per year",
+      "Auto-debit from bank account"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Pradhan Mantri Shram Yogi Maan-Dhan",
+    "description": "Pension scheme for unorganized sector workers.",
+    "criteria": {
+      "income": { "max": 15000 },
+      "age": { "min": 18, "max": 40 }
+    },
+    "benefits": [
+      "Monthly pension of ₹3,000 after 60",
+      "Government matching contribution",
+      "Family pension available"
+    ]
+  }
+]
+
