@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Eligibility - Govt Scheme Checker</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../src/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ff6b35;">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <i class="bi bi-shield-check"></i> Govt Scheme Checker
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="schemes.html"
+                >Check Eligibility</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <div class="card shadow-lg">
+            <div class="card-header text-white" style="background-color: #ff6b35;">
+              <h3 class="mb-0">
+                <i class="bi bi-clipboard-check"></i> Eligibility Checker
+              </h3>
+            </div>
+            <div class="card-body p-4">
+              <form id="eligibilityForm">
+                <div class="mb-4">
+                  <label for="age" class="form-label fw-bold"
+                    >Age <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="age"
+                    name="age"
+                    min="0"
+                    max="120"
+                    required
+                    placeholder="Enter your age"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label for="gender" class="form-label fw-bold"
+                    >Gender <span class="text-danger">*</span></label
+                  >
+                  <select
+                    class="form-select"
+                    id="gender"
+                    name="gender"
+                    required
+                  >
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="mb-4">
+                  <label for="income" class="form-label fw-bold"
+                    >Annual Income (₹) <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="income"
+                    name="income"
+                    min="0"
+                    required
+                    placeholder="Enter annual income in rupees"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label for="category" class="form-label fw-bold"
+                    >Category <span class="text-danger">*</span></label
+                  >
+                  <select
+                    class="form-select"
+                    id="category"
+                    name="category"
+                    required
+                  >
+                    <option value="">Select Category</option>
+                    <option value="general">General</option>
+                    <option value="obc">OBC</option>
+                    <option value="sc">SC</option>
+                    <option value="st">ST</option>
+                  </select>
+                </div>
+
+                <div class="mb-4">
+                  <label for="location" class="form-label fw-bold"
+                    >Location <span class="text-danger">*</span></label
+                  >
+                  <select
+                    class="form-select"
+                    id="location"
+                    name="location"
+                    required
+                  >
+                    <option value="">Select Location</option>
+                    <option value="rural">Rural</option>
+                    <option value="urban">Urban</option>
+                  </select>
+                </div>
+
+                <div class="mb-4">
+                  <label for="education" class="form-label fw-bold"
+                    >Education Level <span class="text-danger">*</span></label
+                  >
+                  <select
+                    class="form-select"
+                    id="education"
+                    name="education"
+                    required
+                  >
+                    <option value="">Select Education Level</option>
+                    <option value="illiterate">Illiterate</option>
+                    <option value="primary">Primary (1-5)</option>
+                    <option value="secondary">Secondary (6-10)</option>
+                    <option value="higher">Higher Secondary (11-12)</option>
+                    <option value="graduate">Graduate</option>
+                    <option value="postgraduate">Post Graduate</option>
+                  </select>
+                </div>
+
+                <div class="mb-4">
+                  <label class="form-label fw-bold">Special Conditions</label>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="disabled"
+                      name="disabled"
+                    />
+                    <label class="form-check-label" for="disabled">
+                      Person with Disability
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="widow"
+                      name="widow"
+                    />
+                    <label class="form-check-label" for="widow">
+                      Widow/Widower
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="farmer"
+                      name="farmer"
+                    />
+                    <label class="form-check-label" for="farmer">
+                      Farmer/Agricultural Worker
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="unemployed"
+                      name="unemployed"
+                    />
+                    <label class="form-check-label" for="unemployed">
+                      Unemployed
+                    </label>
+                  </div>
+                </div>
+
+                <div class="d-grid gap-2">
+                  <button type="submit" class="btn btn-lg" style="background-color: #ff6b35; color: white; border: none;">
+                    <i class="bi bi-search"></i> Check Eligibility
+                  </button>
+                  <div class="d-flex gap-2">
+                    <button
+                      type="reset"
+                      class="btn btn-outline-secondary flex-fill"
+                      id="resetBtn"
+                    >
+                      <i class="bi bi-arrow-clockwise"></i> Reset Form
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div id="resultsSection" class="mt-5" style="display: none">
+            <div class="card shadow-lg">
+              <div class="card-header bg-success text-white">
+                <h3 class="mb-0">
+                  <i class="bi bi-check-circle"></i> Eligibility Results
+                </h3>
+              </div>
+              <div class="card-body p-4">
+                <div id="resultsContainer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+      <div class="container text-center">
+        <p class="mb-0">
+          &copy; 2024 Government Scheme Eligibility Checker. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../src/script.js"></script>
+  </body>
+</html>
