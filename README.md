@@ -1,5 +1,3 @@
-# Govt-Scheme-Eligibility-Checker
-government scheme eligibilty checker using html css js and bootstrap
 # Government Scheme Eligibility Checker
 
 A web application to check eligibility for various government schemes based on user information like age, income, category, location, etc.
